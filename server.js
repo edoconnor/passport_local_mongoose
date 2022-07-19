@@ -55,21 +55,6 @@ app.get("/secret", connectEnsureLogin.ensureLoggedIn(), (req, res) => {
   res.sendFile(__dirname + "/static/secret-page.html");
 });
 
-// // Route to Log out
-// app.get('/logout', function(req, res) {
-//     req.logout();
-//     res.redirect('/login');
-//   });
-
-// app.get("/logout", function (req, res, next) {
-//   req.logout(function (err) {
-//     if (err) {
-//       return next(err);
-//     }
-//     res.sendFile(__dirname + "/static/login.html");
-//   });
-// });
-
 app.get("/logout", function (req, res, next) {
   req.logout(function (err) {
     if (err) {
