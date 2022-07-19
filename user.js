@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const passportLocalMongoose = require('passport-local-mongoose');
 
-mongoose.connect('mongodb+srv://eddie:jamestown@cluster0.swuan.mongodb.net/test?retryWrites=true&w=majority',{
+mongoose.connect('url goes here',{
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
